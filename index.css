@@ -1,0 +1,91 @@
+.main{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.leftdiv{
+width: 30%;
+}
+.logo{
+    width: 150px;
+    height:103px;
+    border-radius: 0px;
+}
+hr{
+    color: blue;
+    background-color: blue;
+    height: 3px;
+}
+.rightdiv{
+
+    text-align:justify;
+}
+.img{
+    width: 99%;
+    border: 3px solid #ddd;
+    box-shadow: 3px 3px 3px 3px #ddd;
+    border-radius: 50px;
+    height: 500px;
+    text-align: center;
+    display: block;
+}
+img{
+    width:450px;
+    justify-content: center;
+    border-radius: 50px;
+    height:300px;
+}
+h4{
+    color:blue;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.beetgreen,.cabbag,.celery,.cucumber,.lettuce,.pumpkin{
+    width:30%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid #ddd;
+    border-radius: 50px;
+    box-shadow: 3px 3px 3px 3px #ddd;
+}
+@media only screen and (max-width:700px) {
+    .main{
+        display:flex;
+        justify-content:center; 
+        flex-wrap: wrap;
+    }
+        .logo{
+            width: 150px;
+            height:200px;
+            justify-content: center;
+        }
+        .rightdiv{
+           font-size: 250%;
+            text-align:center;
+        }
+        .img{
+            height: 300px;
+        }
+        img{
+            width:80%;
+        }  
+        .beetgreen,.cabbag,.celery,.cucumber,.lettuce,.pumpkin{
+            width:100%;
+        } 
+}
+@media only screen and (min-width:700px) and (max-width:1497px) {
+    .main{
+        display:flex;
+        justify-content:space-between; 
+        flex-wrap: wrap;
+    }
+            img{
+                width:90%;
+            }  
+            .beetgreen,.cabbag,.celery,.cucumber,.lettuce,.pumpkin{
+                width: 43%;
+            } 
+
+}
